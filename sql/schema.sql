@@ -11,13 +11,13 @@ USE employee_db
 
 -- Creates the tables --
 CREATE TABLE department (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(30)  NULL, -- to hold department name --
     PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
-    id INT NOT NULL AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(30) NULL, -- to hold role title --
     salary DECIMAL(10.3) NULL, -- to hold role salary --
     department_id INT NULL, -- to hold reference to department role belongs to --
