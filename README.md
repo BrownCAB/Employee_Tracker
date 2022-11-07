@@ -27,7 +27,7 @@ TBA
 ## Installation
 
 1. Create files needed to preform the challenge.
-2. Install and/or require MYSQL2, MYSQL, Inquirer.
+2. Install and/or require MYSQL2 to connect MYSQL database, Inquirer and console.table package to print MySQL rows to the console.
 3. Modify the code based on the Acceptance criteria.
 4. Full fill the acceptances criteria grading requirements.
 5. Add, Commit, and Push Repo to Github.
@@ -39,10 +39,10 @@ The challenge use the MySQL2 package Links to an external site. to connect to yo
 
 ## Testing
 ```
-1. npm init -y to create a new .json file
+1. npm init -y // to create a new .json file
 2. npm i // to install npm
 3. npm i inquirer
-4. npm i mysql //if not installed already
+4. npm i mysql // if not installed already
 - or -
 mysql -u root -p // to login into mysql database
 5. npm i console.table
