@@ -30,18 +30,18 @@ VALUES ("Lawyer", 190000, 4);
 
 -- Insert Employee Values --
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("John Doe");
+VALUES ("John", "Doe", 1, null);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Mike Chan");
+VALUES ("Mike", "Chan", 2, 1);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ashley Rodriguez");
+VALUES ("Ashley", "Rodriguez", 3, null);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Kevin Tupik");
+VALUES ("Kevin", "Tupik", 4, 3);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Kunai Singh");
+VALUES ("Kunai", "Singh", 5, null);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Malia Brown");
+VALUES ("Malia", "Brown", 6, 5);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Sarah Lourd");
+VALUES ("Sarah", "Lourd", 7, null);
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Tom Allen");
+VALUES ("Tom", "Allen", 8, 7);
