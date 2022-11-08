@@ -124,7 +124,14 @@ function viewAllRoles() {
     console.log("Viewing all roles");
     // Queries for job title, role_id, the department that role belongs to, and the salary for that role
     let query =
-    `SELECT * FROM role`;
+    `SELECT r.id, r.title, r.salary, d.name
+    FROM role r
+    JOIN department d
+    ON r.department_id = d.id`;
+    // `SELECT role.id, role.title, role.salary, department.name
+    // FROM role
+    // JOIN department
+    // ON role.department_id = department.id`;
 
     connection.query(query, function (err, res) {
         if (err) throw err;
@@ -417,7 +424,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
 //=== Bonus Functions ===//
 // function viewAllEmpsByMgr() {}
 
-
+//=== View All Employees By Dept ===//
 function viewAllEmpsByDept() {
     console.log("Viewing employees by department\n");
 
