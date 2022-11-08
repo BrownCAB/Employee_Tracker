@@ -42,13 +42,12 @@ The challenge use the MySQL2 package Links to an external site. to connect to yo
 1. npm init -y // to create a new .json file
 2. npm i // to install npm
 3. npm i inquirer@8
-4. npm i mysql2 // if not installed already
+4. npm i mysql2 // to connect to mysql
 6. npm i console.table 
 7. mysql -u root -p // to login into mysql database
-8. npm i console.table
-9. source (insert file name) // inject data
-10. exit // quit mysql
-11. node server.js // run application in terminal
+8. SOURCE (insert file name) // inject data
+9. exit // quit mysql
+10. node server.js // run application in terminal
 ```
 
 ## Credits 
