@@ -72,25 +72,25 @@ function firstPrompt() {
                 updateEmpsRole();
                 break;
             //Bonus:
-            // case "View all employees by manager",
+            // case "View all employees by manager":
             //     viewAllEmpsByMgr();
             //     break;
             case "View all employees by department":
                 viewAllEmpsByDept(); 
                 break;
-            // case "Update Employee managers"
+            // case "Update Employee managers":
             //     updateEmpsMgrs();
             //     break;
-            // case "Delete departments"
+            // case "Delete departments":
             //     deleteDepts(); 
             //     break;
-            // case "Delete roles"
+            // case "Delete roles":
             //     deleteRoles(); 
             //     break;
             case "Delete employees":
                 deleteEmps(); 
                 break;
-            // case "Aggregate all department salaries",
+            // case "Aggregate all department salaries":
             //     allSalaries();
             //     break;
 
@@ -535,7 +535,4 @@ function promptDelete(deleteEmployeeChoices) {
     });  
 }
 
-
 // function allSalaries() {}
-
-//firstPrompt();
