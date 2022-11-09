@@ -35,7 +35,7 @@ The challenge use the MySQL2 package Links to an external site. to connect to yo
 
 <img src="./assets/employee_tracker.gif">
   <br>
-  <a href="">Walkthrough Video</a> 
+  <a href="https://user-images.githubusercontent.com/110314270/200716907-2aff372a-cd93-40e6-87eb-f5543bdc2a22.mp4">Walkthrough Video</a> 
   <br>
   <a href="https://drive.google.com/file/d/1e9rXmVN9nhS2cEKrYASoCThkV90eewlt/view?usp=share_link">Download Walkthrough Video</a> 
   <br>
