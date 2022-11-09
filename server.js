@@ -124,14 +124,10 @@ function viewAllRoles() {
     console.log("Viewing all roles");
     // Queries for job title, role_id, the department that role belongs to, and the salary for that role
     let query =
-    `SELECT r.id, r.title, r.salary, d.name
-    FROM role r
-    JOIN department d
-    ON r.department_id = d.id`;
-    // `SELECT role.id, role.title, role.salary, department.name
-    // FROM role
-    // JOIN department
-    // ON role.department_id = department.id`;
+      `SELECT r.id, r.title, r.salary, d.name AS department
+      FROM role r
+      JOIN department d
+      ON r.department_id = d.id`
 
     connection.query(query, function (err, res) {
         if (err) throw err;
@@ -173,7 +169,7 @@ function addDept() {
         {
             type: "input",
             name: "department",
-            message: "What is the name of the department?"
+            message: "What is the name of the department?",
         },
     ]).then(({ department }) => {
         console.log("Adding an department!")
@@ -338,7 +334,7 @@ function updateEmpsRole() {
 function employeeArray() {
   console.log("Updating an employee");
 
-  var query =
+  let query =
     `SELECT e.id, e.first_name, e.last_name, r.title, d.name AS department, r.salary, CONCAT(m.first_name, ' ', m.last_name) AS manager
     FROM employee e
     JOIN role r
@@ -365,7 +361,7 @@ function employeeArray() {
 function roleArray(employeeChoices) {
   console.log("Updating an role");
 
-  var query =
+  let query =
     `SELECT r.id, r.title, r.salary 
   FROM role r`
   let roleChoices;
@@ -403,7 +399,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
     ])
     .then(function (answer) {
 
-      var query = `UPDATE employee SET role_id = ? WHERE id = ?`
+      let query = `UPDATE employee SET role_id = ? WHERE id = ?`
       // when finished prompting, insert a new item into the db with that info
       connection.query(query,
         [ answer.roleId,  
@@ -428,7 +424,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
 function viewAllEmpsByDept() {
     console.log("Viewing employees by department\n");
 
-  var query =
+  let query =
     `SELECT d.id, d.name, r.salary AS budget
     FROM employee e
     LEFT JOIN role r
@@ -466,7 +462,7 @@ function promptDepartment(departmentChoices) {
     .then(function (answer) {
       console.log("answer ", answer.departmentId);
 
-      var query =
+      let query =
         `SELECT e.id, e.first_name, e.last_name, r.title, d.name AS department 
         FROM employee e
         JOIN role r
@@ -498,7 +494,7 @@ function promptDepartment(departmentChoices) {
 function deleteEmps() {
     console.log("Deleting an employee!")
 
-    var query =
+    let query =
     `SELECT e.id, e.first_name, e.last_name
       FROM employee e`
 
@@ -529,7 +525,7 @@ function promptDelete(deleteEmployeeChoices) {
     ])
     .then(function (answer) {
 
-      var query = `DELETE FROM employee WHERE ?`;
+      let query = `DELETE FROM employee WHERE ?`;
       // when finished prompting, insert a new item into the db with that info
       connection.query(query, { id: answer.employeeId }, function (err, res) {
         if (err) throw err;
