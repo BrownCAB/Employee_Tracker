@@ -20,10 +20,6 @@ My challenge this week is to build a command-line application from scratch to ma
 
 As the image illustrates, your schema should contain the following three tables:AS A business owner I WANT to be able to view and manage the departments, roles, and employees in my company SO THAT I can organize and plan my business.
 
-## Links
-
-TBA
-
 ## Installation
 
 1. Create files needed to preform the challenge.
@@ -36,6 +32,13 @@ TBA
 ## Usage
 
 The challenge use the MySQL2 package Links to an external site. to connect to your MySQL database and perform queries, the Inquirer packageLinks to an external site. to interact with the user via the command line, and the console.table packageLinks to an external site. to print MySQL rows to the console.
+
+<img src="./assets/employee_tracker.gif">
+  <br>
+  <a href="">Walkthrough Video</a> 
+  <br>
+  <a href="https://drive.google.com/file/d/1e9rXmVN9nhS2cEKrYASoCThkV90eewlt/view?usp=share_link">Download Walkthrough Video</a> 
+  <br>
 
 ## Testing
 ```
@@ -51,7 +54,7 @@ The challenge use the MySQL2 package Links to an external site. to connect to yo
 ```
 
 ## Credits 
-Instructor, 2u Tutor, and etc
+Instructor, 2u Tutor, and etc.
 
 ## Questions
 
