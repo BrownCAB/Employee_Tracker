@@ -450,8 +450,7 @@ function viewAllEmpsByDept() {
 // User choose the department list, then employees pop up
 function promptDepartment(departmentChoices) {
 
-  inquirer
-    .prompt([
+  inquirer.prompt([
       {
         type: "list",
         name: "departmentId",
@@ -475,7 +474,7 @@ function promptDepartment(departmentChoices) {
         if (err) throw err;
 
         console.table("response ", res);
-        console.log(res.affectedRows + "Employees are viewed!\n");
+        console.log("Employees by department are viewed!\n");
 
         firstPrompt();
       });
