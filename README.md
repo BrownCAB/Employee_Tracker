@@ -30,7 +30,7 @@ As the image illustrates, your schema should contain the following three tables:
 
 ## Usage
 
-The challenge use the MySQL2 package Links to an external site. to connect to your MySQL database and perform queries, the Inquirer packageLinks to an external site. to interact with the user via the command line, and the console.table packageLinks to an external site. to print MySQL rows to the console.
+The challenge use the MySQL2 package to connect to your MySQL database and perform queries, the Inquirer packageLinks to an external site. to interact with the user via the command line, and the console.table packageLinks to an external site. to print MySQL rows to the console.
 
 <img src="./assets/employee_tracker.gif">
   <br>
