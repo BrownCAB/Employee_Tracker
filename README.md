@@ -7,7 +7,6 @@
 ## Table of Contents
 
 - [Description](#Description)
-- [Links](#Links) 
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Testing](#Testing)
